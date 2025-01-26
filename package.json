@@ -4,7 +4,7 @@
   "description": "Mock server for Haruhana statistics API",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 8080 --host 0.0.0.0 --no-cors"
+    "start": "json-server --watch db.json --routes routes.json --port 8080 --base /api"
   },
   "dependencies": {
     "json-server": "^0.17.4"

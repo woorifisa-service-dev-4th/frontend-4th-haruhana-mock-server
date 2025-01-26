@@ -1,0 +1,6 @@
+{
+  "/api/statistics": "/statistics",
+  "/api/statistics/summary": "/statistics_summary",
+  "/api/statistics/weekly": "/statistics_weekly",
+  "/api/statistics/category": "/statistics_category"
+}
