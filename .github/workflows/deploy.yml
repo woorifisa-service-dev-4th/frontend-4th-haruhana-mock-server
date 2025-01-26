@@ -11,15 +11,28 @@ jobs:
       - name: 소스코드 체크아웃
         uses: actions/checkout@v4
 
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: PM2 전역 설치
+        run: npm install -g pm2
+
       - name: 의존성 설치
         run: npm install
 
-      - name: 포트 확인 및 프로세스 종료
+      - name: 이전 프로세스 정리
         run: |
-          pid=$(lsof -t -i:8080) || true
-          if [ ! -z "$pid" ]; then
-            kill -9 $pid || true
-          fi
+          pm2 delete haruhana-api || true
+          sleep 5
 
       - name: API 서버 시작
-        run: nohup npm start > output.log 2>&1 &
+        run: |
+          pm2 start npm --name "haruhana-api" -- start
+          sleep 5
+          pm2 logs haruhana-api --lines 100
+
+      - name: 상태 확인
+        run: |
+          curl -f http://localhost:8080/api/statistics/summary || (pm2 logs haruhana-api --lines 200 && exit 1)
