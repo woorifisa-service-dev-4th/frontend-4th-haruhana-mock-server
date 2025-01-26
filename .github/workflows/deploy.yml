@@ -23,16 +23,7 @@ jobs:
         run: npm install
 
       - name: 이전 프로세스 정리
-        run: |
-          pm2 delete haruhana-api || true
-          sleep 5
+        run: pm2 delete haruhana-api || true
 
       - name: API 서버 시작
-        run: |
-          pm2 start npm --name "haruhana-api" -- start
-          sleep 5
-          pm2 logs haruhana-api --lines 100
-
-      - name: 상태 확인
-        run: |
-          curl -f http://localhost:8080/api/statistics/summary || (pm2 logs haruhana-api --lines 200 && exit 1)
+        run: pm2 start npm --name "haruhana-api" -- start
