@@ -1,36 +1,34 @@
 {
-  "statistics_summary": {
-    "isSuccess": true,
-    "statusCode": 200,
-    "message": "사용자 통계 요약 정보 조회 성공",
-    "data": {
-      "user": {
-        "totalSolved": 45,
-        "correctRate": 78,
-        "incorrectRate": 22,
-        "timeStats": {
-          "averageTime": 240,
-          "totalTime": 10800,
-          "fastestTime": 60,
-          "longestTime": 600,
-          "averageTimeByCategory": {
-            "운영체제": 240,
-            "네트워크": 200,
-            "자료구조": 250,
-            "알고리즘": 300,
-            "DB": 150,
-            "보안": 150
-          }
+  "isSuccess": true,
+  "statusCode": 200,
+  "message": "사용자 통계 요약 정보 조회 성공",
+  "data": {
+    "user": {
+      "totalSolved": 45,
+      "correctRate": 78,
+      "incorrectRate": 22,
+      "timeStats": {
+        "averageTime": 240,
+        "totalTime": 10800,
+        "fastestTime": 60,
+        "longestTime": 600,
+        "averageTimeByCategory": {
+          "운영체제": 240,
+          "네트워크": 200,
+          "자료구조": 250,
+          "알고리즘": 300,
+          "DB": 150,
+          "보안": 150
         }
-      },
-      "average": {
-        "totalSolved": 32,
-        "correctRate": 65,
-        "incorrectRate": 35,
-        "timeStats": {
-          "averageTime": 300,
-          "totalTime": 9600
-        }
+      }
+    },
+    "average": {
+      "totalSolved": 32,
+      "correctRate": 65,
+      "incorrectRate": 35,
+      "timeStats": {
+        "averageTime": 300,
+        "totalTime": 9600
       }
     }
   }

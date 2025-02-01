@@ -1,83 +1,81 @@
 {
-  "statistics_category": {
-    "isSuccess": true,
-    "statusCode": 200,
-    "message": "카테고리별 통계 조회 성공",
-    "data": {
-      "categories": [
-        {
-          "name": "운영체제",
-          "solvedCount": 12,
-          "totalSolvedPercentage": 17.1,
-          "correctCount": 14,
-          "incorrectCount": 4,
-          "totalCount": 18,
-          "accuracyRate": 78,
-          "incorrectRate": 22,
-          "currentStreak": 3,
-          "bestStreak": 5
-        },
-        {
-          "name": "네트워크",
-          "solvedCount": 15,
-          "totalSolvedPercentage": 21.4,
-          "correctCount": 17,
-          "incorrectCount": 3,
-          "totalCount": 20,
-          "accuracyRate": 85,
-          "incorrectRate": 15,
-          "currentStreak": 4,
-          "bestStreak": 7
-        },
-        {
-          "name": "자료구조",
-          "solvedCount": 8,
-          "totalSolvedPercentage": 11.4,
-          "correctCount": 22,
-          "incorrectCount": 3,
-          "totalCount": 25,
-          "accuracyRate": 88,
-          "incorrectRate": 12,
-          "currentStreak": 2,
-          "bestStreak": 6
-        },
-        {
-          "name": "알고리즘",
-          "solvedCount": 20,
-          "totalSolvedPercentage": 28.6,
-          "correctCount": 15,
-          "incorrectCount": 5,
-          "totalCount": 20,
-          "accuracyRate": 75,
-          "incorrectRate": 25,
-          "currentStreak": 5,
-          "bestStreak": 8
-        },
-        {
-          "name": "DB",
-          "solvedCount": 10,
-          "totalSolvedPercentage": 14.3,
-          "correctCount": 23,
-          "incorrectCount": 2,
-          "totalCount": 25,
-          "accuracyRate": 92,
-          "incorrectRate": 8,
-          "currentStreak": 6,
-          "bestStreak": 9
-        },
-        {
-          "name": "보안",
-          "solvedCount": 5,
-          "totalSolvedPercentage": 7.2,
-          "correctCount": 9,
-          "incorrectCount": 2,
-          "totalCount": 11,
-          "accuracyRate": 82,
-          "incorrectRate": 18,
-          "currentStreak": 1,
-          "bestStreak": 3
-        }
-      ]
-    }
+  "isSuccess": true,
+  "statusCode": 200,
+  "message": "카테고리별 통계 조회 성공",
+  "data": {
+    "categories": [
+      {
+        "name": "운영체제",
+        "solvedCount": 12,
+        "totalSolvedPercentage": 17.1,
+        "correctCount": 14,
+        "incorrectCount": 4,
+        "totalCount": 18,
+        "accuracyRate": 78,
+        "incorrectRate": 22,
+        "currentStreak": 3,
+        "bestStreak": 5
+      },
+      {
+        "name": "네트워크",
+        "solvedCount": 15,
+        "totalSolvedPercentage": 21.4,
+        "correctCount": 17,
+        "incorrectCount": 3,
+        "totalCount": 20,
+        "accuracyRate": 85,
+        "incorrectRate": 15,
+        "currentStreak": 4,
+        "bestStreak": 7
+      },
+      {
+        "name": "자료구조",
+        "solvedCount": 8,
+        "totalSolvedPercentage": 11.4,
+        "correctCount": 22,
+        "incorrectCount": 3,
+        "totalCount": 25,
+        "accuracyRate": 88,
+        "incorrectRate": 12,
+        "currentStreak": 2,
+        "bestStreak": 6
+      },
+      {
+        "name": "알고리즘",
+        "solvedCount": 20,
+        "totalSolvedPercentage": 28.6,
+        "correctCount": 15,
+        "incorrectCount": 5,
+        "totalCount": 20,
+        "accuracyRate": 75,
+        "incorrectRate": 25,
+        "currentStreak": 5,
+        "bestStreak": 8
+      },
+      {
+        "name": "DB",
+        "solvedCount": 10,
+        "totalSolvedPercentage": 14.3,
+        "correctCount": 23,
+        "incorrectCount": 2,
+        "totalCount": 25,
+        "accuracyRate": 92,
+        "incorrectRate": 8,
+        "currentStreak": 6,
+        "bestStreak": 9
+      },
+      {
+        "name": "보안",
+        "solvedCount": 5,
+        "totalSolvedPercentage": 7.2,
+        "correctCount": 9,
+        "incorrectCount": 2,
+        "totalCount": 11,
+        "accuracyRate": 82,
+        "incorrectRate": 18,
+        "currentStreak": 1,
+        "bestStreak": 3
+      }
+    ]
   }
 }

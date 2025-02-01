@@ -1,4 +1,4 @@
-name: 하루하나 목 API 서버 배포
+name: 하루하나 API 서버 배포
 
 on:
   push:
@@ -22,11 +22,8 @@ jobs:
       - name: 의존성 설치
         run: npm install
 
-      - name: JSON 파일 병합
-        run: node merge-json.js
-
       - name: 이전 프로세스 정리
         run: pm2 delete haruhana-api || true
 
       - name: API 서버 시작
-        run: pm2 start npm --name "haruhana-api" -- start
+        run: pm2 start server.js --name "haruhana-api"
