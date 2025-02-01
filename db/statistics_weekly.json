@@ -1,0 +1,102 @@
+{
+  "statistics_weekly": {
+    "isSuccess": true,
+    "statusCode": 200,
+    "message": "주간 문제 해결 현황 조회 성공",
+    "data": {
+      "weeklyProgress": [
+        {
+          "day": "월",
+          "date": "2024-01-22",
+          "solved": 4,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 1 },
+            { "category": "네트워크", "solved": 0 },
+            { "category": "자료구조", "solved": 1 },
+            { "category": "알고리즘", "solved": 2 },
+            { "category": "DB", "solved": 0 },
+            { "category": "보안", "solved": 0 }
+          ]
+        },
+        {
+          "day": "화",
+          "date": "2024-01-23",
+          "solved": 6,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 2 },
+            { "category": "네트워크", "solved": 1 },
+            { "category": "자료구조", "solved": 1 },
+            { "category": "알고리즘", "solved": 1 },
+            { "category": "DB", "solved": 1 },
+            { "category": "보안", "solved": 0 }
+          ]
+        },
+        {
+          "day": "수",
+          "date": "2024-01-24",
+          "solved": 3,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 1 },
+            { "category": "네트워크", "solved": 0 },
+            { "category": "자료구조", "solved": 0 },
+            { "category": "알고리즘", "solved": 1 },
+            { "category": "DB", "solved": 1 },
+            { "category": "보안", "solved": 0 }
+          ]
+        },
+        {
+          "day": "목",
+          "date": "2024-01-25",
+          "solved": 7,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 2 },
+            { "category": "네트워크", "solved": 1 },
+            { "category": "자료구조", "solved": 1 },
+            { "category": "알고리즘", "solved": 2 },
+            { "category": "DB", "solved": 1 },
+            { "category": "보안", "solved": 0 }
+          ]
+        },
+        {
+          "day": "금",
+          "date": "2024-01-26",
+          "solved": 5,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 1 },
+            { "category": "네트워크", "solved": 1 },
+            { "category": "자료구조", "solved": 1 },
+            { "category": "알고리즘", "solved": 1 },
+            { "category": "DB", "solved": 0 },
+            { "category": "보안", "solved": 1 }
+          ]
+        },
+        {
+          "day": "토",
+          "date": "2024-01-27",
+          "solved": 8,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 2 },
+            { "category": "네트워크", "solved": 2 },
+            { "category": "자료구조", "solved": 1 },
+            { "category": "알고리즘", "solved": 2 },
+            { "category": "DB", "solved": 1 },
+            { "category": "보안", "solved": 0 }
+          ]
+        },
+        {
+          "day": "일",
+          "date": "2024-01-28",
+          "solved": 4,
+          "categoryDetails": [
+            { "category": "운영체제", "solved": 1 },
+            { "category": "네트워크", "solved": 0 },
+            { "category": "자료구조", "solved": 1 },
+            { "category": "알고리즘", "solved": 1 },
+            { "category": "DB", "solved": 1 },
+            { "category": "보안", "solved": 0 }
+          ]
+        }
+      ]
+    }
+  }
+}
