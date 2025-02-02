@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const statisticsSummary = require("./db/statistics_summary.json");
 const statisticsWeekly = require("./db/statistics_weekly.json");
@@ -19,6 +20,7 @@ const PORT = 8080;
 // 미들웨어
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public"))); // 정적 파일 제공
 
 // 응답 헬퍼 함수
 const createResponse = (success, message, data) => ({
@@ -26,6 +28,11 @@ const createResponse = (success, message, data) => ({
   statusCode: success ? 200 : 400,
   message,
   data,
+});
+
+// Root endpoint for API documentation
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // 문제 관련 라우트

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하루하나 API 문서</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      .endpoint {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .method {
+        color: #0066cc;
+        font-weight: bold;
+      }
+      h1 {
+        color: #333;
+      }
+      h2 {
+        color: #444;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌱 하루하나 API 문서</h1>
+
+    <h2>문제 관련 API</h2>
+    <div class="endpoint">
+      <p><span class="method">GET</span> /api/problems</p>
+      <p>전체 문제 목록을 조회합니다.</p>
+      <p>Query Parameters:</p>
+      <ul>
+        <li>category: 특정 카테고리의 문제만 조회</li>
+        <li>level: 특정 난이도의 문제만 조회</li>
+      </ul>
+    </div>
+    <div class="endpoint">
+      <p><span class="method">GET</span> /api/problems/categories</p>
+      <p>전체 카테고리 목록을 조회합니다.</p>
+    </div>
+
+    <h2>통계 관련 API</h2>
+    <div class="endpoint">
+      <p><span class="method">GET</span> /api/statistics/summary</p>
+      <p>사용자의 전체 통계 요약 정보를 조회합니다.</p>
+    </div>
+    <div class="endpoint">
+      <p><span class="method">GET</span> /api/statistics/weekly</p>
+      <p>주간 문제 해결 현황을 조회합니다.</p>
+    </div>
+    <div class="endpoint">
+      <p><span class="method">GET</span> /api/statistics/category</p>
+      <p>카테고리별 통계 정보를 조회합니다.</p>
+    </div>
+  </body>
+</html>
